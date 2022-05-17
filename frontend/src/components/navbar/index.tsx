@@ -7,7 +7,7 @@ function Navbar() {
         <header>
             <nav className="container">
                 <div className="moview-nav-content">
-                    <h1 className='teste'>Moview</h1>
+                    <h1>Moview</h1>
                     <a href="https://github.com/AlexWasHeree">
                         <div className='moview-contact-container'>
                             <GithubIcon />
