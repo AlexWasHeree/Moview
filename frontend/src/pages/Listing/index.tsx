@@ -27,11 +27,15 @@ function Listing() {
                 const data = response.data as MoviePage;
                 setPage(data);
             });
-    }, []);
+    }, [pageNumber]);
+
+    const handlePageChange = (newNumber: number) => {
+        setPageNumber(newNumber);
+    }
 
     return (
         <>
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
 
